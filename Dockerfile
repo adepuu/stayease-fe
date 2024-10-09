@@ -21,6 +21,7 @@ COPY . .
 RUN yarn build
 
 # Setup production image
+# Trigger deployment
 FROM base AS runner
 ENV NODE_ENV=production
 
